@@ -6,3 +6,88 @@ card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg img{
 .pb-2 {
     text-align:center;
 }
+
+.col h2{
+    font-size:22px;
+}
+
+ .row-cols-1>* {
+    flex: 0 0 auto;
+    width:33%;
+} 
+
+.col{
+    
+    cursor:pointer;
+}
+
+.col img{
+    
+    height:370px;
+}
+
+/* .flex-column {
+    /* flex-direction: column !important; */
+
+
+@media only screen and (max-width:1240px) {
+    
+    .row-cols-1>* {
+        flex: 0 0 auto;
+        width: 33%;
+        
+    } 
+    .col h2{
+        margin-bottom:60px;
+        font-size:16px;
+    }
+    
+    
+    .col img{
+        max-height:250px;
+    }
+
+    .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1 {
+        text-align:center;
+        max-height: 100px;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .col{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+       
+    }
+    .row-cols-1>* {
+        flex: 0 0 auto;
+        margin-top:80px;
+        
+        
+    } 
+    .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1 {
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    .col{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+
+    }
+    .row-cols-1>* {
+        flex: 0 0 auto;
+        
+        margin-top:80px;
+        
+        
+    } 
+}
