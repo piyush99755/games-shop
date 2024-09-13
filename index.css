@@ -3,12 +3,20 @@ card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg img{
     
 }
 
+.px-4 pt-5 my-5 text-center border-bottom{
+    background-image: url('images/charity-1.webp');
+}
+
 .pb-2 {
     text-align:center;
 }
 
 .col h2{
     font-size:22px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 
  .row-cols-1>* {
@@ -19,24 +27,56 @@ card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg img{
 .col{
     
     cursor:pointer;
+   
 }
 
 .col img{
     
-    height:370px;
+   max-height:370px;
 }
+
+.col span{
+    display:block;
+    width:100%;
+    
+}
+
+h1{
+    margin-top:auto;
+    text-align: center;
+}
+
+/* .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #ce1b1b;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 1;
+    transition: opacity .15s ease;
+} */
 
 /* .flex-column {
     /* flex-direction: column !important; */
 
 
-@media only screen and (max-width:1240px) {
-    
-    .row-cols-1>* {
-        flex: 0 0 auto;
-        width: 33%;
-        
-    } 
+@media only screen and (max-width:1200px) {
+    .col{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+       
+
+    }
+   
     .col h2{
         margin-bottom:60px;
         font-size:16px;
@@ -44,8 +84,15 @@ card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg img{
     
     
     .col img{
-        max-height:250px;
+        height:250px;
     }
+
+    .row-cols-1>* {
+        flex: 0 0 auto;
+        width: 33%;
+        height:auto;
+        
+    } 
 
     .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1 {
         text-align:center;
@@ -53,29 +100,37 @@ card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg img{
     }
 }
 
-@media only screen and (max-width:950px){
+@media only screen and (max-width:960px){
     .col{
         display:flex;
         align-items:center;
         justify-content:center;
-       
+        height:auto;
+        width:auto;
     }
+
+    .col img{
+        width:100%;
+    }
+
     .row-cols-1>* {
         flex: 0 0 auto;
-        margin-top:80px;
+       
+        width:50%;
+        
         
         
     } 
     .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1 {
         align-items: center;
         justify-content: center;
-        height: 80px;
+        
         
     }
 }
 
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:650px){
     .col{
         display:flex;
         align-items:center;
@@ -85,7 +140,24 @@ card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg img{
     }
     .row-cols-1>* {
         flex: 0 0 auto;
+        width:50%;
+        margin-top:80px;
         
+        
+    } 
+}
+
+@media only screen and (max-width:500px){
+    .col{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+
+    }
+    .row-cols-1>* {
+        flex: 0 0 auto;
+        width:100%;
         margin-top:80px;
         
         
